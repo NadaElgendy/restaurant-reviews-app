@@ -2,7 +2,7 @@
 This app is designed to be submitted in Udacity's front-end developer nanodegree.
 
 # Overview
-Restaurant reviews app is a web application that shows uses [Mapbox] (https://www.mapbox.com) to show some restaurants in a specific area. These restaurants have multiple reviews.
+Restaurant reviews app is a web application that shows uses [Mapbox](https://www.mapbox.com) to show some restaurants in a specific area. These restaurants have multiple reviews.
 
 # Requiremnts
 * [Python 2.7 or Python 3](https://www.python.org)
