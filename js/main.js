@@ -1,13 +1,13 @@
 let restaurants,
   neighborhoods,
-  cuisines
-var newMap
-var markers = []
+  cuisines,
+  markers = [];
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
+  let newMap;
   initMap(); // added 
   fetchNeighborhoods();
   fetchCuisines();
@@ -78,7 +78,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: '<your MAPBOX API KEY HERE>',
+    mapboxToken: 'sk.eyJ1IjoiYWJkYWxsYWhuYXNzZXIiLCJhIjoiY2pzdWZsMmtsMXg1ejQ0b2VwYzk4MHhveiJ9.RPjSJ3bCDfj-ySarYVS_VA',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -148,6 +148,7 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
+  image.alt = 'Restaurant preview image';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
