@@ -11,5 +11,5 @@ Restaurant reviews app is a web application that shows uses [Mapbox](https://www
 1. Clone it using  `git clone https://github.com/NadaElgendy/restaurant-reviews-app.git`
 2. From your CMD/Terminal go to the cloned folder using `cd restaurant-reviews-app`
 3. Check your Python version using this command `python -V`
-4. Initialize HTTP server using `python -m SimpleHTTPServer 8000` for Python 2.x or `python3 -m http.server 8000` for Python 3
+4. Initialize HTTP server using `python -m SimpleHTTPServer 8000` for Python 2.x or `python3 -m http.server 8000` for Python 3 (Note for windows users use `python -m http.server 8000`)
 5. Open http://localhost:8000 from your browser.
